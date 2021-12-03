@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84AC562153550B992C8551AC /* Pods_FSPagerView_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97171BC911DEF27464A79683 /* Pods_FSPagerView_Demo.framework */; };
 		E7FFDC1A275A612F00EF104B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FFDC19275A612F00EF104B /* AppDelegate.swift */; };
 		E7FFDC1C275A612F00EF104B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FFDC1B275A612F00EF104B /* SceneDelegate.swift */; };
 		E7FFDC1E275A612F00EF104B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FFDC1D275A612F00EF104B /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97171BC911DEF27464A79683 /* Pods_FSPagerView_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSPagerView_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B221D1E847BE5FD8175D097D /* Pods-FSPagerView-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSPagerView-Demo.debug.xcconfig"; path = "Target Support Files/Pods-FSPagerView-Demo/Pods-FSPagerView-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		E7FFDC16275A612F00EF104B /* FSPagerView-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FSPagerView-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FFDC19275A612F00EF104B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7FFDC1B275A612F00EF104B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		E7FFDC22275A612F00EF104B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7FFDC25275A612F00EF104B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7FFDC27275A612F00EF104B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC15000D164F296A3D3985AA /* Pods-FSPagerView-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSPagerView-Demo.release.xcconfig"; path = "Target Support Files/Pods-FSPagerView-Demo/Pods-FSPagerView-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84AC562153550B992C8551AC /* Pods_FSPagerView_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EF27D79AF0A3D7E43E96351 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97171BC911DEF27464A79683 /* Pods_FSPagerView_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66782A2BD9A73003EEAEDFFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B221D1E847BE5FD8175D097D /* Pods-FSPagerView-Demo.debug.xcconfig */,
+				FC15000D164F296A3D3985AA /* Pods-FSPagerView-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E7FFDC0D275A612F00EF104B = {
 			isa = PBXGroup;
 			children = (
 				E7FFDC18275A612F00EF104B /* FSPagerView-Demo */,
 				E7FFDC17275A612F00EF104B /* Products */,
+				66782A2BD9A73003EEAEDFFA /* Pods */,
+				0EF27D79AF0A3D7E43E96351 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7FFDC2A275A612F00EF104B /* Build configuration list for PBXNativeTarget "FSPagerView-Demo" */;
 			buildPhases = (
+				1F39DBE0CC8EC1034F74EAD1 /* [CP] Check Pods Manifest.lock */,
 				E7FFDC12275A612F00EF104B /* Sources */,
 				E7FFDC13275A612F00EF104B /* Frameworks */,
 				E7FFDC14275A612F00EF104B /* Resources */,
+				B33247121BD6CD4319822C3D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F39DBE0CC8EC1034F74EAD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FSPagerView-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B33247121BD6CD4319822C3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSPagerView-Demo/Pods-FSPagerView-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSPagerView-Demo/Pods-FSPagerView-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FSPagerView-Demo/Pods-FSPagerView-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E7FFDC12275A612F00EF104B /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		E7FFDC2B275A612F00EF104B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B221D1E847BE5FD8175D097D /* Pods-FSPagerView-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +381,7 @@
 		};
 		E7FFDC2C275A612F00EF104B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC15000D164F296A3D3985AA /* Pods-FSPagerView-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
