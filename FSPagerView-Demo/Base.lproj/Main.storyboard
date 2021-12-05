@@ -32,6 +32,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9nv-em-utW" secondAttribute="trailing" id="vJy-J9-mJk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pagerView" destination="9nv-em-utW" id="EKo-SX-kJs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

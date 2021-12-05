@@ -14,6 +14,8 @@
 		E7FFDC21275A612F00EF104B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FFDC1F275A612F00EF104B /* Main.storyboard */; };
 		E7FFDC23275A612F00EF104B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7FFDC22275A612F00EF104B /* Assets.xcassets */; };
 		E7FFDC26275A612F00EF104B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FFDC24275A612F00EF104B /* LaunchScreen.storyboard */; };
+		E7FFDC2F275CC1FC00EF104B /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FFDC2D275CC1FC00EF104B /* HeaderCell.swift */; };
+		E7FFDC30275CC1FC00EF104B /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7FFDC2E275CC1FC00EF104B /* HeaderCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		E7FFDC22275A612F00EF104B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7FFDC25275A612F00EF104B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7FFDC27275A612F00EF104B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7FFDC2D275CC1FC00EF104B /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		E7FFDC2E275CC1FC00EF104B /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		FC15000D164F296A3D3985AA /* Pods-FSPagerView-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSPagerView-Demo.release.xcconfig"; path = "Target Support Files/Pods-FSPagerView-Demo/Pods-FSPagerView-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +60,6 @@
 				B221D1E847BE5FD8175D097D /* Pods-FSPagerView-Demo.debug.xcconfig */,
 				FC15000D164F296A3D3985AA /* Pods-FSPagerView-Demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,6 +87,8 @@
 				E7FFDC19275A612F00EF104B /* AppDelegate.swift */,
 				E7FFDC1B275A612F00EF104B /* SceneDelegate.swift */,
 				E7FFDC1D275A612F00EF104B /* ViewController.swift */,
+				E7FFDC2D275CC1FC00EF104B /* HeaderCell.swift */,
+				E7FFDC2E275CC1FC00EF104B /* HeaderCell.xib */,
 				E7FFDC1F275A612F00EF104B /* Main.storyboard */,
 				E7FFDC22275A612F00EF104B /* Assets.xcassets */,
 				E7FFDC24275A612F00EF104B /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7FFDC30275CC1FC00EF104B /* HeaderCell.xib in Resources */,
 				E7FFDC26275A612F00EF104B /* LaunchScreen.storyboard in Resources */,
 				E7FFDC23275A612F00EF104B /* Assets.xcassets in Resources */,
 				E7FFDC21275A612F00EF104B /* Main.storyboard in Resources */,
@@ -207,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7FFDC2F275CC1FC00EF104B /* HeaderCell.swift in Sources */,
 				E7FFDC1E275A612F00EF104B /* ViewController.swift in Sources */,
 				E7FFDC1A275A612F00EF104B /* AppDelegate.swift in Sources */,
 				E7FFDC1C275A612F00EF104B /* SceneDelegate.swift in Sources */,
