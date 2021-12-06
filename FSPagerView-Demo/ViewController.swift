@@ -8,6 +8,18 @@
 import UIKit
 import FSPagerView
 
+enum CellBgColor {
+    case Brown
+    case Gray
+    
+    var color: UIColor {
+        switch self {
+        case .Brown: return .systemBrown
+        case .Gray: return .systemGray4
+        }
+    }
+}
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var pagerView: FSPagerView!
@@ -18,6 +30,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         setupPagerView()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        updateCellBgColor(.Brown)
     }
     
     private func setupPagerView() {
@@ -34,6 +52,11 @@ class ViewController: UIViewController {
         transformer.minimumScale = 0.8
         pagerView.transformer = transformer
     }
+    
+    private func updateCellBgColor(_ type: CellBgColor) {
+        let currentCell = pagerView.cellForItem(at: pagerView.currentIndex)
+        currentCell?.backgroundColor = type.color
+    }
 }
 
 extension ViewController: FSPagerViewDataSource {
@@ -49,7 +72,17 @@ extension ViewController: FSPagerViewDataSource {
 }
 
 extension ViewController: FSPagerViewDelegate {
+    func pagerViewWillBeginDragging(_ pagerView: FSPagerView) {
+        updateCellBgColor(.Gray)
+    }
+
+    func pagerViewDidScroll(_ pagerView: FSPagerView) {
+        updateCellBgColor(.Gray)
+    }
     
+    func pagerViewDidEndDecelerating(_ pagerView: FSPagerView) {
+        updateCellBgColor(.Brown)
+    }
 }
 
 
