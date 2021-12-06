@@ -26,9 +26,12 @@ class ViewController: UIViewController {
         pagerView.register(UINib(nibName: "HeaderCell", bundle: nil), forCellWithReuseIdentifier: "HeaderCell")
         
         pagerView.isInfinite = true
-        pagerView.itemSize = CGSize(width: 200, height: 50)
-        pagerView.interitemSpacing = 20
-        pagerView.transformer = FSPagerViewTransformer(type: .overlap)
+        pagerView.itemSize = CGSize(width: UIScreen.main.bounds.width * 240/375, height: UIScreen.main.bounds.width * 50/375)
+        
+        let transformer = FSPagerViewTransformer(type: .overlap)
+        transformer.minimumAlpha = 1
+        transformer.minimumScale = 0.8
+        pagerView.transformer = transformer
     }
 }
 
