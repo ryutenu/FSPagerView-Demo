@@ -17,18 +17,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9nv-em-utW" customClass="FSPagerView" customModule="FSPagerView">
-                                <rect key="frame" x="0.0" y="94" width="375" height="52"/>
+                                <rect key="frame" x="0.0" y="94" width="375" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="9nv-em-utW" secondAttribute="height" multiplier="375:52" id="pBL-3F-KfR"/>
+                                    <constraint firstAttribute="width" secondItem="9nv-em-utW" secondAttribute="height" multiplier="375:60" id="pBL-3F-KfR"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2m-Qo-9NA" customClass="FSPagerView" customModule="FSPagerView">
-                                <rect key="frame" x="0.0" y="196" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="204" width="375" height="200"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="I2m-Qo-9NA" secondAttribute="height" multiplier="375:200" id="9rx-4y-UXS"/>
-                                    <constraint firstAttribute="height" constant="200" id="GUG-vY-LLl"/>
                                 </constraints>
                             </view>
                         </subviews>

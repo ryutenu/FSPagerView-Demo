@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         headerPagerView.register(UINib(nibName: "HeaderCell", bundle: nil), forCellWithReuseIdentifier: "HeaderCell")
         
         headerPagerView.isInfinite = true
-        headerPagerView.itemSize = CGSize(width: UIScreen.main.bounds.width * 240/375, height: UIScreen.main.bounds.width * 50/375)
+        headerPagerView.itemSize = CGSize(width: UIScreen.main.bounds.width * 240/375, height: UIScreen.main.bounds.width * 60/375)
         headerPagerView.interitemSpacing = 20
         
         let transformer = PagerViewTransformer(type: .overlap)
@@ -65,9 +65,9 @@ class ViewController: UIViewController {
             let cell = headerPagerView.cellForItem(at: i) as? HeaderCell
             
             if i == currentIndex {
-                cell?.backgroundColor = .systemBrown
+                cell?.updateCell(isCurrent: true)
             } else {
-                cell?.backgroundColor = .systemGray4
+                cell?.updateCell(isCurrent: false)
             }
         }
     }
@@ -93,12 +93,33 @@ extension ViewController: FSPagerViewDataSource {
 }
 
 extension ViewController: FSPagerViewDelegate {
+    // Begin scroll
+    func pagerViewWillBeginDragging(_ pagerView: FSPagerView) {
+        
+    }
+    
+    // Be scrolling
+    func pagerViewDidScroll(_ pagerView: FSPagerView) {
+        
+    }
+    
+    // Will end scrolling
+    func pagerViewWillEndDragging(_ pagerView: FSPagerView, targetIndex: Int) {
+        if pagerView == headerPagerView {
+            cardPagerView.scrollToItem(at: targetIndex, animated: true)
+        } else if pagerView == cardPagerView {
+            headerPagerView.scrollToItem(at: targetIndex, animated: true)
+        }
+    }
+    
+    // Did end scrolling
     func pagerViewDidEndDecelerating(_ pagerView: FSPagerView) {
         if pagerView == headerPagerView {
             updateCellBgColor()
         }
     }
     
+    // Did end scroll animation
     func pagerViewDidEndScrollAnimation(_ pagerView: FSPagerView) {
         if pagerView == headerPagerView {
             updateCellBgColor()

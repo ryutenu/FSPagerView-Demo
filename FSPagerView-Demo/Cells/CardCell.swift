@@ -14,8 +14,20 @@ class CardCell: FSPagerViewCell {
     
     private let titleList = ["千早ぶる", "神代もきかず", "竜田川", "からくれなゐに", "水くくるとは"]
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        commonInit()
+    }
+    
+    func commonInit() {
+        contentView.backgroundColor = UIColor.clear
+        contentView.layer.shadowOpacity = 0
     }
     
     func configureCell(index: Int) {
