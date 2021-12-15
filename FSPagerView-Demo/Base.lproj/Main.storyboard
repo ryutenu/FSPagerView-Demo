@@ -23,17 +23,29 @@
                                     <constraint firstAttribute="width" secondItem="9nv-em-utW" secondAttribute="height" multiplier="375:52" id="pBL-3F-KfR"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2m-Qo-9NA" customClass="FSPagerView" customModule="FSPagerView">
+                                <rect key="frame" x="0.0" y="196" width="375" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="I2m-Qo-9NA" secondAttribute="height" multiplier="375:200" id="9rx-4y-UXS"/>
+                                    <constraint firstAttribute="height" constant="200" id="GUG-vY-LLl"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="I2m-Qo-9NA" firstAttribute="top" secondItem="9nv-em-utW" secondAttribute="bottom" constant="50" id="6Ho-zx-0lX"/>
                             <constraint firstItem="9nv-em-utW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="B78-p8-XMY"/>
                             <constraint firstItem="9nv-em-utW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pj7-wi-ldh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I2m-Qo-9NA" secondAttribute="trailing" id="Vp8-dE-c13"/>
+                            <constraint firstItem="I2m-Qo-9NA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uZU-Jv-PjL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9nv-em-utW" secondAttribute="trailing" id="vJy-J9-mJk"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="pagerView" destination="9nv-em-utW" id="EKo-SX-kJs"/>
+                        <outlet property="cardPagerView" destination="I2m-Qo-9NA" id="M8i-j9-EoQ"/>
+                        <outlet property="headerPagerView" destination="9nv-em-utW" id="EKo-SX-kJs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
